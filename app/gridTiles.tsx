@@ -18,7 +18,7 @@ export function GridTiles({
   return (
     <div className="grid">
       {guesses.map((guess, idx) => {
-        let isCurrentGuess = idx == currentIndex();
+        const isCurrentGuess = idx == currentIndex();
         return (
           <Tile
             key={idx}
