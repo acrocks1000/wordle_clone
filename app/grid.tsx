@@ -30,7 +30,7 @@ export function WordGrid() {
         ) {
           setIsGameOver(true);
         }
-        let newGuesses = [...guesses];
+        const newGuesses = [...guesses];
         newGuesses[currentGuessIndex] = currentGuess;
         setGuesses(newGuesses);
         setCurrentGuess("");

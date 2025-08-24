@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 const WORD_LENGTH = 5;
 
 export function GridTiles({
@@ -7,7 +5,7 @@ export function GridTiles({
   currentGuess,
   wordle,
 }: {
-  guesses: any[];
+  guesses: (string | null)[];
   currentGuess: string;
   wordle: string;
 }) {
